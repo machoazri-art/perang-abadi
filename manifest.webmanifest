@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "Perang Abadi — Text RPG",
+  "name": "Perang Abadi — RPG Teks",
   "short_name": "Perang Abadi",
-  "description": "Game text RPG fantasi Perang Abadi.",
+  "description": "Permainan RPG teks fantasi Perang Abadi dalam Bahasa Melayu.",
   "lang": "ms-MY",
   "start_url": "./",
   "scope": "./",
