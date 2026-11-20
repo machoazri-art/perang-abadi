@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-title" content="Perang Abadi">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="apple-touch-icon" href="./icon-192.png">
-<title>⚔️ Perang Abadi — Pixel RPG</title>
+<title>⚔️ Perang Abadi — Dark Fantasy RPG</title>
 <style>
 *{box-sizing:border-box} body{margin:0;padding:28px max(14px,env(safe-area-inset-left)) calc(18px + env(safe-area-inset-bottom));min-height:100vh;background:radial-gradient(circle at 50% 0%,#1a1f2e 0%,#0a0c11 70%);color:#d8dce6;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;display:flex;justify-content:center;-webkit-tap-highlight-color:transparent}
 #app{width:100%;max-width:680px}h1{font-size:22px;text-align:center;letter-spacing:2px;margin:8px 0 18px;color:#ffb347;text-shadow:0 0 14px #ff8c0073}
@@ -29,10 +29,51 @@ input{width:100%;padding:12px;font:inherit;font-size:16px;background:#161b26;bor
 .tag{font-size:10px;padding:2px 7px;border-radius:20px;background:#2b3550;color:#9db4e0}.empty,.small{color:#8791a6;font-size:12px}.empty{text-align:center;padding:10px;font-style:italic}.center{text-align:center}
 .footer{color:#69758b;text-align:center;font-size:10px;padding:4px}
 @media(min-width:520px){body{padding-top:32px}.panel{padding:16px}}
+
+:root{color-scheme:dark;--gold:#e8b85d;--gold-soft:#f6d58b;--ink:#090d15;--panel:#151c29;--line:#344158;--muted:#9aa8bd;--blue:#5c8fd6}
+body{padding-top:calc(18px + env(safe-area-inset-top));background:radial-gradient(ellipse at 50% -12%,#34405a 0%,#151d2b 34%,#090d15 78%);background-attachment:fixed}
+#app{max-width:720px}
+.brand{display:flex;align-items:center;justify-content:center;gap:13px;margin:4px 0 20px;padding:13px 12px;border:1px solid #6c5735;border-radius:14px;background:linear-gradient(135deg,#1c2636,#111722 65%,#241d19);box-shadow:0 8px 28px #0008,inset 0 1px #ffffff12}
+.brand-mark{width:36px;height:36px;display:grid;place-items:center;border:1px solid #8c7040;border-radius:10px;color:var(--gold-soft);font-size:21px;background:#d8a94b12;text-shadow:0 0 12px #e8b85d88}
+.brand h1{font-size:clamp(17px,4.5vw,23px);letter-spacing:3px;margin:0;color:var(--gold-soft);text-shadow:0 2px 12px #d99b3c55}
+.brand-sub{font-size:8px;letter-spacing:1.7px;color:#9ba9bd;margin-top:5px;text-align:center}
+.panel{background:linear-gradient(145deg,#1a2332f5,#111722f5);border:1px solid #354158;border-radius:14px;padding:15px;margin-bottom:13px;box-shadow:0 7px 22px #0005,inset 0 1px #ffffff09}
+.panel h2{display:flex;align-items:center;gap:8px;font-size:12px;letter-spacing:1.4px;color:#e5c47f;border-bottom:1px solid #344158;padding-bottom:10px;margin-bottom:12px}
+.row{font-size:12px;line-height:1.5;margin:7px 0;align-items:center}
+.row span:first-child{color:#aebbd0}
+.row span:last-child{color:#f2f5fa}
+.bar{height:11px;border-radius:8px;background:#080d16;border-color:#3a465b;box-shadow:inset 0 2px 4px #0008}
+.bar i{box-shadow:0 0 10px currentColor}
+.hp i{background:linear-gradient(90deg,#b92e39,#fa6b62)}
+.xp i{background:linear-gradient(90deg,#326dc2,#58d7ce)}
+button{min-height:47px;border-radius:11px;border-color:#43516c;background:linear-gradient(180deg,#2a3549,#202a3b);color:#e0eaff;font-size:12px;font-weight:700;letter-spacing:.1px;box-shadow:0 3px 0 #0b101a,0 5px 12px #0003;transition:filter .15s,border-color .15s,transform .15s}
+button:active:not(:disabled){transform:translateY(2px);box-shadow:0 1px 0 #0b101a}
+button:hover:not(:disabled){filter:brightness(1.15);border-color:#7186aa}
+button.primary{background:linear-gradient(180deg,#a84432,#76291f);border-color:#d36b4c;color:#fff0e8;box-shadow:0 3px 0 #431a17,0 6px 14px #0004}
+button.gold{background:linear-gradient(180deg,#6e5927,#433719);border-color:#a98a42;color:#ffdf9b;box-shadow:0 3px 0 #241d0e}
+.btns{gap:10px;margin-top:10px}
+input,select{background:#0e1521!important;border:1px solid #3d4a62!important;border-radius:10px!important;color:#f4f6fb!important}
+input:focus,select:focus{outline:2px solid #c99c4d66;border-color:#c99c4d!important}
+.notice{background:linear-gradient(120deg,#4b381c55,#241e17);border:1px solid #9a7839;color:#ffdfa0;border-radius:12px;box-shadow:0 5px 16px #0003}
+.petcard{background:linear-gradient(135deg,#29243b,#1a1d2b);border:1px solid #51436f;border-radius:12px}
+.enemycard{background:linear-gradient(135deg,#40232b,#211923);border:1px solid #87424b;border-radius:13px;box-shadow:0 6px 20px #0004}
+.tag{background:#34435d;color:#d6e4ff;border:1px solid #536681;font-weight:700;letter-spacing:.4px}
+#log{height:190px;background:#080d15;border:1px solid #344158;border-radius:12px;padding:12px;line-height:1.75;box-shadow:inset 0 3px 12px #0006}
+#log div{padding:2px 0;border-bottom:1px solid #ffffff08}
+#screen>.panel:first-child{animation:panelIn .22s ease-out}
+.footer{padding:12px 4px 5px;letter-spacing:1.3px;color:#77859b}
+.footer span{color:var(--gold)}
+.small{line-height:1.55}
+.empty{padding:16px 10px}
+@keyframes panelIn{from{opacity:.65;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@media(min-width:520px){body{padding-top:calc(28px + env(safe-area-inset-top))}.panel{padding:18px}.brand{margin-bottom:22px}}
+@media(max-width:380px){.panel{padding:12px}.btns{gap:8px}button{font-size:11px;padding:10px 6px}.brand-sub{font-size:7px;letter-spacing:1.2px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
 </style>
 </head>
 <body>
-<div id="app"><h1>⚔️ PERANG ABADI ⚔️</h1><div id="screen"></div><div class="footer">PERANG ABADI · EDISI PWA</div></div>
+<div id="app"><header class="brand"><div class="brand-mark">⚔</div><div><h1>PERANG ABADI</h1><div class="brand-sub">DARK FANTASY · ROLE PLAYING ADVENTURE</div></div><div class="brand-mark">✦</div></header><div id="screen"></div><div class="footer">PERANG ABADI <span>◆</span> EDISI PWA</div></div>
 <script>
 const SAVE_KEY='perangAbadi_save_v1';
 const BACKUP_KEY='perangAbadi_save_backup_v1';
