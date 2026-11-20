@@ -51,3 +51,22 @@ Projek ini menggunakan HTML, CSS dan JavaScript tanpa rangka kerja luaran. Data 
 - Equipment mempunyai affix tambahan yang meningkatkan ATK atau DEF.
 - Loot Codex merekod jumlah drop, rarity dan koleksi item.
 - Save lama dimigrasikan secara automatik; data inventori dan equipment sedia ada dikekalkan.
+
+
+## Ekspansi Cerita Dark Fantasy
+
+- Kronik Kegelapan dengan lima bab utama yang dibuka mengikut kemajuan wilayah watak.
+- NPC berperanan dalam jalan cerita: Eira, Dargan, Vaelis, Seraphine dan Raja Iblis.
+- Setiap bab menawarkan dua pilihan bercabang dengan dialog naratif, ganjaran emas/XP dan jejak moral.
+- Pilihan serta pengakhiran disimpan secara berasingan untuk setiap slot watak.
+- Save schema kekal V4. Data cerita baharu ditambah secara automatik apabila Kronik dibuka; save lama tidak perlu dipadam atau dimulakan semula.
+- Cache PWA dikemas kini ke V14.
+
+### Ujian asas pembangunan
+
+1. Pastikan JavaScript utama lulus semakan syntax.
+2. Buka Kronik menggunakan watak Bab 1; hanya bab yang sudah dibuka mengikut kemajuan watak dipaparkan.
+3. Pilih satu keputusan dan pastikan bab ditanda selesai serta ganjaran diberikan sekali sahaja.
+4. Muat semula permainan dan pastikan keputusan kekal dalam slot watak yang sama.
+5. Tukar watak dan pastikan kronik setiap slot tidak bercampur.
+6. Teruskan save lama dan sahkan data watak sedia ada masih boleh dimuatkan.
