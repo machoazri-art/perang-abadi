@@ -28,13 +28,14 @@ Projek ini menggunakan HTML, CSS dan JavaScript tanpa rangka kerja luaran. Data 
 - Bos mempunyai dua fasa. Apabila HP jatuh ke 50%, bos memasuki fasa mengamuk dengan serangan dan pertahanan lebih tinggi.
 - Musuh menggunakan AI asas: pulih HP apabila lemah, bertahan untuk menyerap serangan pemain, atau melancarkan serangan berat.
 - Aksi pemain baharu: mengelak (peluang 75% untuk elak serangan seterusnya) dan counter (serangan balas apabila musuh menyerang).
-- Kemahiran serangan kini menggunakan cooldown mengikut giliran, bukan lagi terhad sekali setiap pertempuran: Tebasan Perkasa 3 giliran dan Amukan Naga 4 giliran. Cooldown berkurang setiap kali pemain mengambil tindakan.
+- Semua kemahiran yang telah dipelajari dipaparkan sebagai butang berasingan ketika bertarung, jadi pemain boleh memilih dan menggunakannya secara bergilir mengikut strategi.
+- Setiap kemahiran mempunyai cooldown tersendiri: Tebasan Perkasa 3 giliran, Amukan Naga 4 giliran dan Benteng Jiwa 3 giliran. Cooldown berkurang setiap kali pemain mengambil tindakan.
 - Save schema dinaikkan ke versi 4. Save versi terdahulu dimigrasikan; status pertempuran sementara direset dengan selamat ketika load.
 
 ### Senarai semak ujian manual
 
 1. Load save lama dan pastikan watak, level, gear, inventory, quest, pet dan gold kekal.
-2. Mulakan pertempuran dan uji Serang, Kemahiran, Bertahan, Mengelak, Counter, Ramuan dan Kabur.
+2. Mulakan pertempuran dan uji setiap butang kemahiran yang telah dipelajari, termasuk pertukaran kemahiran, cooldown individu, Serang, Bertahan, Mengelak, Counter, Ramuan dan Kabur.
 3. Pastikan bleed/burn pada musuh dan poison pada pemain mengurangkan HP mengikut giliran.
 4. Uji musuh yang menggunakan heal, guard dan heavy attack.
 5. Uji bos sehingga HP 50% atau kurang dan sahkan fasa kedua diaktifkan sekali sahaja.
