@@ -41,3 +41,13 @@ Projek ini menggunakan HTML, CSS dan JavaScript tanpa rangka kerja luaran. Data 
 5. Uji bos sehingga HP 50% atau kurang dan sahkan fasa kedua diaktifkan sekali sahaja.
 6. Menang/kalah, kemudian mulakan pertempuran baharu dan pastikan status lama tidak terbawa.
 7. Uji dungeon dan World Boss serta eksport/import save.
+
+
+## Deep RPG Loot System — Phase 1
+
+- Equipment drop: 30% untuk musuh biasa dan dijamin untuk boss.
+- Boss mempunyai peluang lebih tinggi untuk menjatuhkan Epic, Legendary dan Mythic.
+- Boss boleh menjatuhkan relik eksklusif: Taring Raja Iblis, Perisai Makam Terlarang, Jantung Abyss dan Mahkota Malaikat Jatuh.
+- Equipment mempunyai affix tambahan yang meningkatkan ATK atau DEF.
+- Loot Codex merekod jumlah drop, rarity dan koleksi item.
+- Save lama dimigrasikan secara automatik; data inventori dan equipment sedia ada dikekalkan.
