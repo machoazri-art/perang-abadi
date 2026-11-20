@@ -28,6 +28,7 @@ Projek ini menggunakan HTML, CSS dan JavaScript tanpa rangka kerja luaran. Data 
 - Bos mempunyai dua fasa. Apabila HP jatuh ke 50%, bos memasuki fasa mengamuk dengan serangan dan pertahanan lebih tinggi.
 - Musuh menggunakan AI asas: pulih HP apabila lemah, bertahan untuk menyerap serangan pemain, atau melancarkan serangan berat.
 - Aksi pemain baharu: mengelak (peluang 75% untuk elak serangan seterusnya) dan counter (serangan balas apabila musuh menyerang).
+- Kemahiran serangan kini menggunakan cooldown mengikut giliran, bukan lagi terhad sekali setiap pertempuran: Tebasan Perkasa 3 giliran dan Amukan Naga 4 giliran. Cooldown berkurang setiap kali pemain mengambil tindakan.
 - Save schema dinaikkan ke versi 4. Save versi terdahulu dimigrasikan; status pertempuran sementara direset dengan selamat ketika load.
 
 ### Senarai semak ujian manual
